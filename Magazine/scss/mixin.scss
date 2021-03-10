@@ -1,0 +1,11 @@
+//Миксины
+@mixin but($w, $h, $bg, $r) {
+  width: $w;
+  height: $h;
+  background-color: $bg;
+  border-radius: $r;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
