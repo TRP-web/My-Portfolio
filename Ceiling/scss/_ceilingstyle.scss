@@ -1,0 +1,20 @@
+.ceiling {
+
+  // .ceiling__wrapper
+
+  &__wrapper {
+    font-family: 'Open Sans';
+  }
+
+  // .ceiling__container
+
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+
+body{
+  font-size: 14px;
+}
