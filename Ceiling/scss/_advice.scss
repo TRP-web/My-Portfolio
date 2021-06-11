@@ -1,0 +1,54 @@
+.ceiling {
+
+  // .ceiling__advice
+
+  &__advice {
+    .ceiling__title{
+      margin-bottom: 51px;
+    }
+  }
+
+
+  // .ceiling__advice-block
+
+  &__advice-block {
+    display: flex;
+    margin-bottom: 32px;
+    &:hover{
+      background-color: #F3F3F3;
+    }
+    @media (max-width:911px) {
+      flex-direction: column;
+      
+    }
+    @media (max-width:767px) {
+      border-bottom: 1px solid lightgray;
+    }
+  }
+
+  // .ceiling__advice-vid
+
+  &__advice-vid {
+    width: 100%;
+    flex: 0 0 50%;
+    cursor: pointer;
+  }
+
+  // .ceiling__advice-text
+
+  &__advice-text {
+    padding: 28px 32px;
+    
+  }
+
+  // .ceiling__par-titel
+
+  &__par-titel {
+  }
+
+  // .ceiling__advice-description
+
+  &__advice-description {
+    line-height: 1.72;
+  }
+}

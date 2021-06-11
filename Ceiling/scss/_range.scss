@@ -1,0 +1,152 @@
+.ceiling {
+
+  // .ceiling__range
+
+  &__range {
+  }
+
+  // .ceiling__container
+
+  &__container {
+  }
+
+  // .ceiling__title
+
+  &__title {
+  }
+
+  // .ceiling__sub-title
+
+  &__sub-title {
+  }
+
+  // .ceiling__range-inner
+
+  &__range-inner {
+    display: flex;
+    align-items: center;
+    @media (max-width:1130px){
+      justify-content: center;
+    }
+    @media (max-width:976px){
+      flex-direction: column;
+    }
+  }
+  
+  &__range-text{
+    color: $blue;
+  }
+  
+  &__range-prise{
+    font-size: 28px;
+    font-weight: 700;
+    margin-right: 60px;
+    @media (max-width:976px){
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+
+  // .ceiling__range-slider
+
+  &__range-slider {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-right: 40px;
+    @media (max-width:976px){
+      margin-right: 0;
+      
+      margin-bottom: 20px;
+      margin-left: 50px;
+    }
+    @media (max-width:460px){
+      flex-direction: column;
+    }
+    @media (max-width:460px){
+      margin-left: 0;
+    }
+  }
+}
+
+#ceiling__fader{
+  width: 450px;
+  height: 4px;
+  background-color: #E6E6E6;
+  border: none;
+  margin-right: 60px;
+  
+  &::before, &::after{
+    position: absolute;
+    top: -6px;
+  }
+  &::before{
+    content: '0';
+    left: -30px;
+  }
+  &::after{
+    content: '50';
+    right: -40px;
+  }
+ @media (max-width:1130px) {
+   width: 300px;
+ }
+ @media (max-width:976px){
+  width: 70vw;
+  
+}
+@media (max-width:620px){
+  width: 260px;
+  
+}
+@media (max-width:460px){
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+}
+#ceiling__volume{
+  color: $blue;
+  font-size: 28px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.noUi-handle{
+  border: none;
+  box-shadow: none;
+}
+
+.noUi-horizontal .noUi-handle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $blue;
+  top: -17px;
+  cursor: pointer;
+  @media (max-width:620px){
+    width: 30px;
+    height: 30px;
+    top: -13px;
+  }
+}
+
+.noUi-handle:before{
+display: none;
+}
+
+.noUi-handle:after{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 5px;
+  top: 5px;
+  @media (max-width:620px){
+    width: 20px;
+    height: 20px;
+
+  }
+}
+.noUi-connect{
+  background-color: $blue;
+}
+

@@ -1,0 +1,129 @@
+.ceiling {
+
+  // .ceiling__form
+
+  &__form {
+    margin-bottom: 70px;
+  }
+
+  // .ceiling__form-back
+
+  &__form-back {
+    background-color: #F7F7F7;
+    padding: 70px 0;
+  }
+
+  // .ceiling__container
+
+  
+
+  // .ceiling__form-title-inner
+
+  &__form-title-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    @media (max-width:991px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  // .ceiling__title
+
+  
+
+  // .ceiling__form-time
+
+  &__form-time {
+  }
+
+  // .ceiling__form-time-text
+
+  &__form-time-text {
+    font-size: 18px;
+    text-align: center;
+    span{
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  // .ceiling__form-inner
+
+  &__form-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width:991px) {
+      flex-direction: column;
+    }
+    .first{
+      width: 477px;
+      @media (max-width:1240px) {
+        width: 357px;
+        
+      }
+      @media (max-width:991px) {
+        width: 100%;
+      }
+    }
+    label{
+      display: flex;
+      @media (max-width:991px) {
+        width: 100%;
+        margin-bottom: 15px;
+      }
+    }
+    .time{
+      width: 197px;
+      @media (max-width:1240px) {
+        width: 150px;
+        
+      }
+      @media (max-width:991px) {
+        width: 100%;
+      }
+    }
+  }
+
+  // .ceiling__form-input
+
+  &__form-input {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    color: #333;
+    font-size: 16px;
+    height: 48px;
+    outline: none;
+    padding: 8px 16px;
+    &::placeholder{
+      color: lightgrey;
+    }
+  }
+
+  // .ceiling__form-sub
+
+  &__form-sub {
+    width: 272px;
+    height: 48px;
+    background: $blue;
+    border: 0;
+    border-radius: 38px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 600px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    transition-duration: 0.3s;
+    @media (max-width:1240px) {
+      width: 200px;
+      
+    }
+    &:hover{
+      background-color: #31A2FF;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.ceiling {
+
+  // .ceiling__banner
+
+  &__banner {
+    padding-top: 140px;
+    @media (max-width:767px) {
+      padding-top: 64px;
+    }
+  }
+
+  // .ceiling__container
+
+  
+
+  // .ceiling__banner-img
+
+  &__banner-img {
+    @media (max-width:845px) {
+      display: none;
+    }
+  }
+
+  // .ceiling__banner-img2
+
+  &__banner-img2 {
+    display: none;
+    @media (max-width:845px) {
+      display: block;
+    }
+  }
+  
+}

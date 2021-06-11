@@ -1,0 +1,155 @@
+.ceiling {
+
+  // .ceiling__settings
+
+  &__settings {
+    .ceiling__title{
+      line-height: 1;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__sub-title{
+    margin-bottom: 50px;
+  }
+ 
+
+ 
+
+  // .ceiling__settings-block
+
+  &__settings-block {
+    display: flex;
+    border: 1px solid lightgray;
+    margin-bottom: 30px;
+    @media (max-width:1050px){
+      flex-direction: column;
+    }
+  }
+
+  // .ceiling__settings-foto-inner
+
+  &__settings-foto-inner {
+    flex: 0 0 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  auto auto auto;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    @media (max-width:1270px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  auto auto;
+    
+    }
+  }
+
+  // .ceiling__settings-foto
+
+  &__settings-foto {
+  }
+  .main-in{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    @media (max-width:1270px){
+      grid-column-end: 3;
+    }
+  }
+  
+  // .ceiling__settings-info-inner
+
+  &__settings-info-inner {
+    padding: 30px;
+  }
+
+  // .ceiling__par-titel
+
+  &__par-titel {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  // .ceiling__settings-prise-inner
+
+  &__settings-prise-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  // .ceiling__settings-prise
+
+  &__settings-prise {
+    font-size: 28px;
+    font-weight: 700;
+  }
+
+  // .ceiling__settings-date
+
+  &__settings-date {
+    font-size: 20px;
+    font-weight: 400;
+    
+  }
+
+  // .ceiling__settings-prise-text
+
+  &__settings-prise-text {
+    font-size: 11px;
+    font-weight: 300;
+  }
+
+  // .ceiling__settings-addres
+
+  &__settings-addres {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  // .ceiling__settings-par-inner
+
+  &__settings-par-inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    
+  }
+
+  // .ceiling__settings-par-set
+
+  &__settings-par-set {
+    @media (max-width: 767px){
+      font-size: 11px;
+    }
+  }
+
+  // .ceiling__settings-par-calc
+
+  &__settings-par-calc {
+    @media (max-width: 767px){
+      font-size: 11px;
+    }
+  }
+
+  // .ceiling__settings-all
+
+  &__settings-all {
+    a{
+      text-decoration: none;
+      font-weight: 600;
+      color: $blue;
+    }
+    
+    margin-top: 20px;
+  }
+  
+}
+.foto2{
+  @media (max-width:1270px) {
+    display: none;
+  }
+}
+
+

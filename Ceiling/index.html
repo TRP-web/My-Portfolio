@@ -6,147 +6,900 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="css/Ceiling.css">
-  <link rel="stylesheet" id="bs-css"
-    href="https://fonts.googleapis.com/css?family=Open+Sans&subset=latin%2Ccyrillic&ver=5.4.6" type="text/css"
-    media="all">
-  <link rel="stylesheet" id="open-css"
-    href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed%3A300%2C700&ver=5.4.6" type="text/css"
-    media="all">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/swiperbox.min.css">
+  <link rel="stylesheet" href="css/nouislider.min.css">
+  <link rel="stylesheet" href="css/ceiling.css">
 </head>
 
 <body>
-  <main class="ceiling">
-    <div class="ceiling__wrapper">
+  <div class="ceiling__wrapper">
+    <main class="ceiling">
       <header class="header">
-        <img src="img/glass.png" alt="glass" class="header__glass">
-        <div class="ceiling__container">
-          <div class="header__inner">
-            <div class="header__logo-inner">
-              <div class="header__logo">
-                <img src="img/logo.png" alt="">
+        <div class="header__wrapper">
+          <div class="header__top">
+            <div class="header__container">
+              <div class="header__top-inner">
+                <div class="header__info-block">
+                  <img src="img/sms.png" alt="sms">
+                  <a href="#">Написать нам</a>
+                </div>
+                <div class="header__info-block">
+                  <img src="img/card.png" alt="sms">
+                  <a href="#">Оплата online</a>
+                </div>
+                <div class="header__info-block">
+                  <img src="img/clock.png" alt="sms">
+                  <a href="#">Работаем до 21:00</a>
+                </div>
               </div>
-              <h1 class="header__logo-text">
-                Натяжные потолки
-              </h1>
-            </div>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li><a href="#" class="header__menu-link">главная</a></li>
-                <li><a href="#" class="header__menu-link">калькулятор</a></li>
-                <li><a href="#" class="header__menu-link">наши преимущества</a></li>
-                <li><a href="#" class="header__menu-link">портфолио</a></li>
-                <li><a href="#" class="header__menu-link">блог</a></li>
-              </ul>
-            </nav>
-            <div class="header__number">
-              <a href="#" class="header__tel">+7(495)649-70-75</a>
-              <span class="header__modal">заказать обратный звонок</span>
             </div>
           </div>
-          <nav class="header__menu two">
-            <ul class="header__list">
-              <li><a href="#" class="header__menu-link">главная</a></li>
-              <li><a href="#" class="header__menu-link">калькулятор</a></li>
-              <li><a href="#" class="header__menu-link">наши преимущества</a></li>
-              <li><a href="#" class="header__menu-link">портфолио</a></li>
-              <li><a href="#" class="header__menu-link">блог</a></li>
-            </ul>
-          </nav>
-      </header>
-      <section class="ceiling__title">
-        <div class="ceiling__container">
-          <div class="ceiling__title-inner">
-            <div class="ceiling__title-img">
-              <img src="img/flat.png" alt="flat">
-              <div class="ceiling__title-set">
-                <img class="ceiling__title-set-img active" src="img/r1.png" alt="set-img" data-tab="tab1" id="tab1">
-                <img class="ceiling__title-set-img" src="img/r2.png" alt="set-img" data-tab="tab2" id="tab2">
-                <img class="ceiling__title-set-img" src="img/r3.png" alt="set-img" data-tab="tab3" id="tab3">
-                <img class="ceiling__title-set-img" src="img/r4.png" alt="set-img" data-tab="tab4" id="tab4">
-                <img class="ceiling__title-set-img" src="img/r5.png" alt="set-img" data-tab="tab5" id="tab5">
-                <img class="ceiling__title-set-img" src="img/r6.png" alt="set-img" data-tab="tab6" id="tab6">
+          <div class="header__container">
+            <div class="header__inner">
+              <div class="header__logo">
+                <img src="img/logo.svg" alt="logo" class="logo">
+              </div>
+              <nav class="header__menu">
+                <ul class="header__lists">
+                  <li class="header__list arow" data-tab="#tab1">
+                    <a href="#" class="header__link">Натяжные потолки</a>
+                  </li>
+                  <li class="header__list arow" data-tab="#tab2">
+                    <a href="#" class="header__link">О компании</a>
+                  </li>
+                  <li class="header__list"><a href="#" class="header__link">Адреса офисов</a></li>
+                </ul>
+              </nav>
+              <div class="header__phones">
+                <div class="header__phones-inner">
+                  <a href="tel:+74957870000" class="header__phone">+7 (495) 787-00-00</a>
+                  <a href="tel:8 800 200-00-92" class="header__phone">8 800 200-00-92</a>
+                </div>
+                <a href="tel:+74957870000" class="header__img-phone">
+                  <img src="img/phone.png" alt="phone">
+                </a>
+                <div class="header__burger">
+                  <span></span>
+                </div>
               </div>
             </div>
-            <div class="ceiling__title-info-text">
-              <h2 class="ceiling__title-sub-title">
-                ГАРАНТИРОВАННО НИЗКИЕ ЦЕНЫ НА
-              </h2>
-              <h3 class="ceiling__title-title">
-                НАТЯЖНЫЕ ПОТОЛКИ
-              </h3>
-              <div class="ceiling__title-tab-inner">
-                <div class="ceiling__title-tab-block active" data-tab="tab1">
-
-                </div>
-                <div class="ceiling__title-tab-block" data-tab="tab2">
-
-                </div>
-                <div class="ceiling__title-tab-block" data-tab="tab3">
-
-                </div>
-                <div class="ceiling__title-tab-block" data-tab="tab4">
-
-                </div>
-                <div class="ceiling__title-tab-block" data-tab="tab5">
-
-                </div>
-                <div class="ceiling__title-tab-block" data-tab="tab6">
-
-                </div>
-                
+          </div>
+          <div class="header__block-tab" id="tab1">
+            <div class="header__block-tab-inner">
+              <div class="header__block-inner">
+                <ul class="header__tab-lists">
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать замерщика</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Оплата заказа online</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать сервисную службу</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Найти ближайший офис</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Написать отзыв</a></li>
+                </ul>
               </div>
-              <div class="ceiling__title-tab-content active" id="tab1">
-                <span class="ceiling__title-tiket">ГОСТИНАЯ КОМНАТА</span>
-                <p class="ceiling__title-prise">от <span>100</span> p/m2</p>
+              <div class="header__block-inner">
+                <ul class="header__tab-lists mb">
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать замерщика</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Оплата заказа online</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать сервисную службу</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Найти ближайший офис</a></li>
+                  <li class="header__tab-list"><a href="#" class="header__tab-link">Написать отзыв</a></li>
+                </ul>
               </div>
-              <div class="ceiling__title-tab-content" id="tab2">
-                <span class="ceiling__title-tiket">СПАЛЬНАЯ КОМНАТА</span>
-                <p class="ceiling__title-prise">от <span>200</span> p/m2</p>
-              </div>
-              <div class="ceiling__title-tab-content" id="tab3">
-                <span class="ceiling__title-tiket">РАБОЧИЙ КАБИНЕТ</span>
-                <p class="ceiling__title-prise">от <span>300</span> p/m2</p>
-              </div>
-              <div class="ceiling__title-tab-content" id="tab4">
-                <span class="ceiling__title-tiket">КУХНЯ</span>
-                <p class="ceiling__title-prise">от <span>400</span> p/m2</p>
-              </div>
-              <div class="ceiling__title-tab-content" id="tab5">
-                <span class="ceiling__title-tiket">ГОСТИНАЯ КОМНАТА</span>
-                <p class="ceiling__title-prise">от <span>500</span> p/m2</p>
-              </div>
-              <div class="ceiling__title-tab-content" id="tab6">
-                <span class="ceiling__title-tiket">ГОСТИНАЯ КОМНАТА</span>
-                <p class="ceiling__title-prise">от <span>600</span> p/m2</p>
-              </div>
-              <p class="ceiling__title-info">Цена кв. метра зависит от площади и периметра помещения. Чем больше площадь и меньше периметр тем дешевле. Самый быстрый способ узнать стоимость вашего
-                натяжного потолка - получить<br> бесплатную консультацию.</p>
-                <form action="#" method="GET" class="ceiling__title-form">
-                  <label for="" class="ceiling__title-label">
-                    <input class="ceiling__title-input" type="text" name="name" placeholder="Ваше имя">
-                    <i class="ceiling__title-input-img">
-                      <img src="img/man.png" alt="man">
-                    </i>
-                  </label>
-                  <label for="" class="ceiling__title-label">
-                    <input class="ceiling__title-input" type="text" name="name" placeholder="Ваш номер телефона">
-                    <i class="ceiling__title-input-img">
-                      <img src="img/phone.png" alt="man">
-                    </i>
-                  </label>
-                  <div class="ceiling__title-button-inner">
-                    <button class="ceiling__form-submit" type="submit">Получить консультацию</button>
+              <div class="header__block-inner">
+                <ul class="header__tab-lists">
+                  <li class="header__tab-list sub-tab">Технологии</li>
+                  <div class="header__tab-sub-content">
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
                   </div>
-                </form>
+                </ul>
+              </div>
+              <div class="header__block-inner">
+                <ul class="header__tab-lists">
+                  <li class="header__tab-list sub-tab">Технологии</li>
+                  <div class="header__tab-sub-content">
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+                  </div>
+                </ul>
+              </div>
+              <div class="header__block-inner">
+                <ul class="header__tab-lists">
+                  <li class="header__tab-list sub-tab">Технологии</li>
+                  <div class="header__tab-sub-content">
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                    <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__block-tab" id="tab2">
+            <div class="header__block-inner">
+              <div class="header__tab-soc">
+                <div class="header__tab-soc-logo">
+                  <a href="#">
+                    <img src="img/youtube-logotype.svg" alt="soc-logo">
+                  </a>
+                </div>
+                <div class="header__tab-soc-logo">
+                  <a href="#">
+                    <img src="img/vk-social-logotype.svg" alt="soc-logo">
+                  </a>
+                </div>
+                <div class="header__tab-soc-logo">
+                  <a href="#">
+                    <img src="img/instagram-social-network-logo-of-photo-camera.svg" alt="soc-logo">
+                  </a>
+                </div>
+                <div class="header__tab-soc-logo">
+                  <a href="#">
+                    <img src="img/facebook-logo.svg" alt="soc-logo">
+                  </a>
+                </div>
+                <div class="header__tab-soc-logo">
+                  <a href="#">
+                    <img src="img/twitter-social-logotype.svg" alt="soc-logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="header__block-inner">
+              <ul class="header__tab-lists">
+                <li class="header__tab-list">Технологии</li>
+                <div class="header__tab-sub-content">
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+                </div>
+              </ul>
+            </div>
+            <div class="header__block-inner">
+              <ul class="header__tab-lists">
+                <li class="header__tab-list">Технологии</li>
+                <div class="header__tab-sub-content">
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                  <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+                </div>
+              </ul>
             </div>
           </div>
         </div>
-        
+
+      </header>
+      <section class="ceiling__banner">
+        <div class="ceiling__container">
+          <div class="ceiling__banner-img">
+            <img src="img/banner.png" alt="">
+          </div>
+          <div class="ceiling__banner-img2">
+            <img src="img/banner2.png" alt="">
+          </div>
+        </div>
       </section>
-    </div>
-  </main>
-  <script src="js/Ceiling.js"></script>
+      <section class="ceiling__form">
+        <div class="ceiling__form-back">
+          <div class="ceiling__container">
+            <div class="ceiling__form-title-inner">
+              <h1 class="ceiling__title">Бесплатный замер в Москве</h1>
+              <div class="ceiling__form-time">
+                <p class="ceiling__form-time-text">
+                  Ближайшее время <br> <span>06.06.2021 в 15:00</span>
+                </p>
+              </div>
+            </div>
+            <form action="#" class="ceiling__form-inner">
+              <label for="">
+                <input type="text" placeholder="Ваш адрес в Москве" class="ceiling__form-input first">
+              </label>
+              <label for="">
+                <input type="text" placeholder="Дата" class="ceiling__form-input time">
+                <input type="text" placeholder="Время" class="ceiling__form-input time">
+              </label>
+              <button type="submit" class="ceiling__form-sub">Визвать замерщика</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="ceiling__foto">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Потолки Випсилинг в интерьере</h2>
+          <div class="ceiling__foto-inner">
+            <a rel="gallery-1" href="img/foto/1.jpg" title="foto1" class="ceiling__foto-img-block">
+              <img src="img/foto/1.jpg" alt="foto">
+            </a>
+            <a rel="gallery-1" href="img/foto/2.jpg" title="foto2" class="ceiling__foto-img-block">
+              <img src="img/foto/2.jpg" alt="foto">
+            </a>
+            <a rel="gallery-1" href="img/foto/3.jpg" title="foto3" class="ceiling__foto-img-block">
+              <img src="img/foto/3.jpg" alt="foto">
+            </a>
+            <a rel="gallery-1" href="img/foto/4.jpg" title="foto4" class="ceiling__foto-img-block">
+              <img src="img/foto/4.jpg" alt="foto">
+            </a>
+          </div>
+          <a href="#" class="ceiling__foto-button">
+            <span class="ceiling__foto-button-span">ПОСМОТРЕТЬ ВСЕ ФОТО</span>
+          </a>
+        </div>
+      </section>
+      <section class="ceiling__settings">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Примеры установленных потолков</h2>
+          <h4 class="ceiling__sub-title">Натяжные потолки Випсилинг с фото и ценой (материал + установка)</h4>
+          <div class="ceiling__settings-block">
+            <div class="ceiling__settings-foto-inner">
+              <a rel="gallery-2" href="img/gal2/1.jpg" title="foto1" class="ceiling__settings-foto main-in">
+                <img src="img/gal2/1.jpg" alt="foto">
+              </a>
+              <a rel="gallery-2" href="img/gal2/2.jpg" title="foto2" class="ceiling__settings-foto foto">
+                <img src="img/gal2/2.jpg" alt="foto">
+              </a>
+              <a rel="gallery-2" href="img/gal2/3.jpg" title="foto3" class="ceiling__settings-foto foto">
+                <img src="img/gal2/3.jpg" alt="foto">
+              </a>
+              <a rel="gallery-2" href="img/gal2/4.jpg" title="foto4" class="ceiling__settings-foto foto">
+                <img src="img/gal2/4.jpg" alt="foto">
+              </a>
+              <a rel="gallery-2" href="img/gal2/5.jpg" title="foto5" class="ceiling__settings-foto foto">
+                <img src="img/gal2/5.jpg" alt="foto">
+              </a>
+              <a rel="gallery-2" href="img/gal2/5.jpg" title="foto5" class="ceiling__settings-foto foto2">
+                <img src="img/gal2/5.jpg" alt="foto">
+              </a>
+            </div>
+            <div class="ceiling__settings-info-inner">
+              <h2 class="ceiling__par-titel">Монтаж потолка в спальне 10 м2 с использованием пленки VIPCEILING серии
+                MONLANGE M9001 (3.25)</h2>
+              <div class="ceiling__settings-prise-inner">
+                <span class="ceiling__settings-prise">12463₽
+                  <p class="ceiling__settings-prise-text">Итоговая стоимость
+                  </p>
+                </span>
+                <span class="ceiling__settings-date">04.06.21</span>
+              </div>
+
+              <h3 class="ceiling__settings-addres">Бачуринская улица, 7к1</h3>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Профиль стеновой невидимый ПВХ</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Лента маскировочная универсальная белая</span>
+                <span class="ceiling__settings-par-calc">10 м</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Платформа для светильника 55-124 мм</span>
+                <span class="ceiling__settings-par-calc">10 м</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Изготовление и окантовка отверстия</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Установка встраиваемого светильника</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Эл. кабель ВВГ 3х1.5ож не подд. горение</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Проведение электропроводки</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Выставление дополнительной конструкции под профиль</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-all">
+                <a href="#" class="">Показать полный список</a>
+              </div>
+            </div>
+          </div>
+          <div class="ceiling__settings-block">
+            <div class="ceiling__settings-foto-inner">
+              <a rel="gallery-3" href="img/gal2/1.jpg" title="foto1" class="ceiling__settings-foto main-in">
+                <img src="img/gal2/1.jpg" alt="foto">
+              </a>
+              <a rel="gallery-3" href="img/gal2/2.jpg" title="foto2" class="ceiling__settings-foto foto">
+                <img src="img/gal2/2.jpg" alt="foto">
+              </a>
+              <a rel="gallery-3" href="img/gal2/3.jpg" title="foto3" class="ceiling__settings-foto foto">
+                <img src="img/gal2/3.jpg" alt="foto">
+              </a>
+              <a rel="gallery-3" href="img/gal2/4.jpg" title="foto4" class="ceiling__settings-foto foto">
+                <img src="img/gal2/4.jpg" alt="foto">
+              </a>
+              <a rel="gallery-3" href="img/gal2/5.jpg" title="foto5" class="ceiling__settings-foto foto">
+                <img src="img/gal2/5.jpg" alt="foto">
+              </a>
+              <a rel="gallery-3" href="img/gal2/5.jpg" title="foto5" class="ceiling__settings-foto foto2">
+                <img src="img/gal2/5.jpg" alt="foto">
+              </a>
+            </div>
+            <div class="ceiling__settings-info-inner">
+              <h2 class="ceiling__par-titel">Монтаж потолка в спальне 10 м2 с использованием пленки VIPCEILING серии
+                MONLANGE M9001 (3.25)</h2>
+              <div class="ceiling__settings-prise-inner">
+                <span class="ceiling__settings-prise">12463₽
+                  <p class="ceiling__settings-prise-text">Итоговая стоимость
+                  </p>
+                </span>
+                <span class="ceiling__settings-date">04.06.21</span>
+              </div>
+
+              <h3 class="ceiling__settings-addres">Бачуринская улица, 7к1</h3>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Профиль стеновой невидимый ПВХ</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Лента маскировочная универсальная белая</span>
+                <span class="ceiling__settings-par-calc">10 м</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Платформа для светильника 55-124 мм</span>
+                <span class="ceiling__settings-par-calc">10 м</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Изготовление и окантовка отверстия</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Установка встраиваемого светильника</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Эл. кабель ВВГ 3х1.5ож не подд. горение</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Проведение электропроводки</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Выставление дополнительной конструкции под профиль</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-all">
+                <a href="#" class="">Показать полный список</a>
+              </div>
+            </div>
+          </div>
+          <div class="ceiling__settings-block">
+            <div class="ceiling__settings-foto-inner">
+              <a rel="gallery-4" href="img/gal2/1.jpg" title="foto1" class="ceiling__settings-foto main-in">
+                <img src="img/gal2/1.jpg" alt="foto">
+              </a>
+              <a rel="gallery-4" href="img/gal2/2.jpg" title="foto2" class="ceiling__settings-foto foto">
+                <img src="img/gal2/2.jpg" alt="foto">
+              </a>
+              <a rel="gallery-4" href="img/gal2/3.jpg" title="foto3" class="ceiling__settings-foto foto">
+                <img src="img/gal2/3.jpg" alt="foto">
+              </a>
+              <a rel="gallery-4" href="img/gal2/4.jpg" title="foto4" class="ceiling__settings-foto foto">
+                <img src="img/gal2/4.jpg" alt="foto">
+              </a>
+              <a rel="gallery-4" href="img/gal2/5.jpg" title="foto5" class="ceiling__settings-foto foto">
+                <img src="img/gal2/5.jpg" alt="foto">
+              </a>
+              <a rel="gallery-4" href="img/gal2/5.jpg" title="foto5" class="ceiling__settings-foto foto2">
+                <img src="img/gal2/5.jpg" alt="foto">
+              </a>
+            </div>
+            <div class="ceiling__settings-info-inner">
+              <h2 class="ceiling__par-titel">Монтаж потолка в спальне 10 м2 с использованием пленки VIPCEILING серии
+                MONLANGE M9001 (3.25)</h2>
+              <div class="ceiling__settings-prise-inner">
+                <span class="ceiling__settings-prise">12463₽
+                  <p class="ceiling__settings-prise-text">Итоговая стоимость
+                  </p>
+                </span>
+                <span class="ceiling__settings-date">04.06.21</span>
+              </div>
+
+              <h3 class="ceiling__settings-addres">Бачуринская улица, 7к1</h3>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Профиль стеновой невидимый ПВХ</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Лента маскировочная универсальная белая</span>
+                <span class="ceiling__settings-par-calc">10 м</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Платформа для светильника 55-124 мм</span>
+                <span class="ceiling__settings-par-calc">10 м</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Изготовление и окантовка отверстия</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Установка встраиваемого светильника</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Эл. кабель ВВГ 3х1.5ож не подд. горение</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Проведение электропроводки</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-par-inner">
+                <span class="ceiling__settings-par-set">Выставление дополнительной конструкции под профиль</span>
+                <span class="ceiling__settings-par-calc">6 шт</span>
+              </div>
+              <div class="ceiling__settings-all">
+                <a href="#" class="">Показать полный список</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="ceiling__foto-button">
+            <span class="ceiling__foto-button-span">5657 примеров потолков</span>
+          </a>
+        </div>
+      </section>
+      <section class="ceiling__prise">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">
+            Цена за 1м<sup>2</sup> с установкой
+          </h2>
+          <div class="ceiling__prise-inner">
+            <div class="ceiling__prise-block">
+              <h2 class="ceiling__par-titel">Эконом</h2>
+              <h4 class="ceiling__sub-title">Для ванной, коридора и прихожей</h4>
+              <div class="ceiling__prise-info-inner">
+                <div class="ceiling__prise-sum-inner">
+                  <span class="ceiling__settings-prise">297</span><span
+                    class="ceiling__settings-prise-v">₽/м<sup>2</sup></span>
+                  <p class="ceiling__prise-anot">Цена актуальна до 13.06.21</p>
+                </div>
+                <div class="ceiling__prise-img">
+                  <img src="img/prise/monbestpr4.svg" alt="info-img">
+                </div>
+              </div>
+              <h4 class="ceiling__prise-settings">Характеристики</h4>
+              <ul class="ceiling__prise-settings-list">
+                <li>VIPCEILING серии MONLANGE M9001 (2.15)</li>
+                <li>Ширина полотна 2.15 м</li>
+                <li>Сертифицировано по ТУ 22.23.11-001-92890591-2017</li>
+                <li>Цена при заказе потолков от 30 м<sup>2</sup></li>
+                <li>Гарантия 15 лет</li>
+              </ul>
+            </div>
+            <div class="ceiling__prise-block">
+              <h2 class="ceiling__par-titel">Стандарт</h2>
+              <h4 class="ceiling__sub-title">Для ванной, коридора и прихожей</h4>
+              <div class="ceiling__prise-info-inner">
+                <div class="ceiling__prise-sum-inner">
+                  <span class="ceiling__settings-prise">360</span><span
+                    class="ceiling__settings-prise-v">₽/м<sup>2</sup></span>
+                  <p class="ceiling__prise-anot">Цена актуальна до 13.06.21</p>
+                </div>
+                <div class="ceiling__prise-img">
+                  <img src="img/prise/350-2.svg" alt="info-img">
+                </div>
+              </div>
+              <h4 class="ceiling__prise-settings">Характеристики</h4>
+              <ul class="ceiling__prise-settings-list">
+                <li>VIPCEILING серии MONLANGE M9001 (2.15)</li>
+                <li>Ширина полотна 2.15 м</li>
+                <li>Сертифицировано по ТУ 22.23.11-001-92890591-2017</li>
+                <li>Цена при заказе потолков от 30 м<sup>2</sup></li>
+                <li>Гарантия 15 лет</li>
+              </ul>
+            </div>
+            <div class="ceiling__prise-block">
+              <h2 class="ceiling__par-titel">Ультраширокие</h2>
+              <h4 class="ceiling__sub-title">Для ванной, коридора и прихожей</h4>
+              <div class="ceiling__prise-info-inner">
+                <div class="ceiling__prise-sum-inner">
+                  <span class="ceiling__settings-prise">405</span><span
+                    class="ceiling__settings-prise-v">₽/м<sup>2</sup></span>
+                  <p class="ceiling__prise-anot">Цена актуальна до 13.06.21</p>
+                </div>
+                <div class="ceiling__prise-img">
+                  <img src="img/prise/545-2.svg" alt="info-img">
+                </div>
+              </div>
+
+              <h4 class="ceiling__prise-settings">Характеристики</h4>
+              <ul class="ceiling__prise-settings-list">
+                <li>VIPCEILING серии MONLANGE M9001 (2.15)</li>
+                <li>Ширина полотна 2.15 м</li>
+                <li>Сертифицировано по ТУ 22.23.11-001-92890591-2017</li>
+                <li>Цена при заказе потолков от 30 м<sup>2</sup></li>
+                <li>Гарантия 15 лет</li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="ceiling__foto-button">
+            <span class="ceiling__foto-button-span">ВСЕ ЦЕНЫ В МОСКВЕ</span>
+          </a>
+        </div>
+      </section>
+      <section class="ceiling__range">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Калькулятор потолков в Москве</h2>
+          <h4 class="ceiling__sub-title">Укажите площадь)</h4>
+          <div class="ceiling__range-inner">
+            <div class="ceiling__range-slider">
+              <div id="ceiling__fader"></div>
+              <div class="ceiling__range-volume">
+                <span id="ceiling__volume"></span>
+                <span class="ceiling__range-text">
+                  м<sup>2</sup>
+                </span>
+              </div>
+            </div>
+            <div class="ceiling__range-prise">
+              <span class="ceiling__range-prise-min">3000 -</span>
+              <span class="ceiling__range-prise-max">5000 ₽</span>
+            </div>
+            <button class="ceiling__form-sub">РАССЧИТАТЬ СТОИМОСТЬ</button>
+          </div>
+        </div>
+      </section>
+      <section class="ceiling__video">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Монтаж натяжного потолка</h2>
+          <video src="video/v1.mp4" class="ceiling__video-pl" autoplay loop muted></video>
+          <div class="ceiling__video-gal-inner">
+            <a rel="gallery-video" href="img/vid/1.jpg" title="foto1" class="ceiling__video-gal-foto">
+              <img src="img/vid/2.jpg" alt="foto">
+            </a>
+            <a rel="gallery-video" href="img/vid/2.jpg" title="foto2" class="ceiling__video-gal-foto">
+              <img src="img/vid/3.jpg" alt="foto">
+            </a>
+            <a rel="gallery-video" href="img/vid/3.jpg" title="foto3" class="ceiling__video-gal-foto">
+              <img src="img/vid/4.jpg" alt="foto">
+            </a>
+            <a rel="gallery-video" href="img/vid/4.jpg" title="foto4" class="ceiling__video-gal-foto">
+              <img src="img/vid/4.jpg" alt="foto">
+            </a>
+          </div>
+          <a href="#" class="ceiling__foto-button">
+            <span class="ceiling__foto-button-span">ПОДРОБНЕЕ</span>
+          </a>
+        </div>
+      </section>
+      <section class="ceiling__lamp">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Светильники VIPCEILING</h2>
+          <div class="ceiling__lamp-block">
+            <div class="ceiling__lamp-inner">
+              <div class="ceiling__lamp-img">
+                <img src="img/lamp1.webp" alt="lampa">
+              </div>
+              <div class="ceiling__lamp-text">
+                <h2 class="ceiling__par-titel">Светильник H5 GX70 белый</h2>
+                <div class="ceiling__lamp-prise-inner">
+                  <div class="ceiling__lamp-prise">
+                    <span class="ceiling__settings-prise">350 ₽</span><br>
+                    <span class="ceiling__lamp-prise-info">Стоимость в составе договора подряда</span>
+                  </div>
+                  <div class="ceiling__lamp-prise-img">
+                    <img src="img/ct1.svg" alt="mark">
+                    <img src="img/ct2.svg" alt="mark">
+                    <img src="img/ct3.svg" alt="mark">
+                  </div>
+                </div>
+                <div class="ceiling__lamp-settings">
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ceiling__lamp-block">
+            <div class="ceiling__lamp-inner">
+              <div class="ceiling__lamp-img">
+                <img src="img/lamp2.webp" alt="lampa">
+              </div>
+              <div class="ceiling__lamp-text">
+                <h2 class="ceiling__par-titel">Светильник H5 GX70 белый</h2>
+                <div class="ceiling__lamp-prise-inner">
+                  <div class="ceiling__lamp-prise">
+                    <span class="ceiling__settings-prise">210 ₽</span><br>
+                    <span class="ceiling__lamp-prise-info">Стоимость в составе договора подряда</span>
+                  </div>
+                  <div class="ceiling__lamp-prise-img">
+                    <img src="img/ct1.svg" alt="mark">
+                    <img src="img/ct2.svg" alt="mark">
+                    <img src="img/ct3.svg" alt="mark">
+                  </div>
+                </div>
+                <div class="ceiling__lamp-settings">
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ceiling__lamp-block">
+            <div class="ceiling__lamp-inner">
+              <div class="ceiling__lamp-img">
+                <img src="img/lamp3.webp" alt="lampa">
+              </div>
+              <div class="ceiling__lamp-text">
+                <h2 class="ceiling__par-titel">Светильник H5 GX70 белый</h2>
+                <div class="ceiling__lamp-prise-inner">
+                  <div class="ceiling__lamp-prise">
+                    <span class="ceiling__settings-prise">210 ₽</span><br>
+                    <span class="ceiling__lamp-prise-info">Стоимость в составе договора подряда</span>
+                  </div>
+                  <div class="ceiling__lamp-prise-img">
+                    <img src="img/ct1.svg" alt="mark">
+                    <img src="img/ct2.svg" alt="mark">
+                    <img src="img/ct3.svg" alt="mark">
+                  </div>
+                </div>
+                <div class="ceiling__lamp-settings">
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                  <div class="ceiling__lamp-par-block">
+                    <h4 class="ceiling__lamp-set">Материал:</h4>
+                    <p class="ceiling__lamp-set-cont">Металл, поликарбонат</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="ceiling__foto-button">
+            <span class="ceiling__foto-button-span">СВЕТИЛЬНИКИ VIPCEILING</span>
+          </a>
+        </div>
+      </section>
+      <section class="ceiling__advice">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Советы по натяжным потолкам</h2>
+          <div class="ceiling__advice-block">
+            <div class="ceiling__advice-vid">
+              <video src="img/advice/1.mp4" class="ceiling__advice-vid"></video>
+            </div>
+            <div class="ceiling__advice-text">
+              <h2 class="ceiling__par-titel">5 способов ремонта натяжного потолка</h2>
+              <p class="ceiling__advice-description">Специалисты устраняют порезы и проколы несколькими способами:
+                установкой заплаты с внешней и внутренней стороны натяжного потолка, частичным перекроем поврежденного
+                участка, установкой диффузора или дополнительного светильника</p>
+            </div>
+          </div>
+          <div class="ceiling__advice-block">
+            <div class="ceiling__advice-vid">
+              <video src="img/advice/2.mp4" class="ceiling__advice-vid"></video>
+            </div>
+            <div class="ceiling__advice-text">
+              <h2 class="ceiling__par-titel">Люстра на планке</h2>
+              <p class="ceiling__advice-description">Для крепления люстры на планке устанавливается специальная
+                конструкция на базовом потолке - закладная. При необходимости люстру можно установить в любом месте
+                натяжного потолка.</p>
+            </div>
+          </div>
+          <div class="ceiling__advice-block">
+            <div class="ceiling__advice-vid">
+              <video src="img/advice/3.mp4" class="ceiling__advice-vid"></video>
+            </div>
+            <div class="ceiling__advice-text">
+              <h2 class="ceiling__par-titel">Слив воды с натяжного потолка</h2>
+              <p class="ceiling__advice-description">После устранения последствий затопления, специалисты сервисной
+                службы вернут натяжному потолку первоначальный вид</p>
+            </div>
+          </div>
+          <a href="#" class="ceiling__foto-button">
+            <span class="ceiling__foto-button-span">ЕЩЕ СОВЕТЫ</span>
+          </a>
+        </div>
+      </section>
+      <section class="ceiling__stock">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Акции</h2>
+          <div class="ceiling__stock-banner">
+            <img src="img/stock.PNG" alt="">
+          </div>
+          <a href="#" class="ceiling__foto-button">
+            <span class="ceiling__foto-button-span">ДРУГИЕ АКЦИИ</span>
+          </a>
+          <div class="ceiling__stock-block-inner">
+            <div class="ceiling__stock-block">
+              <img src="img/stock/1.svg" alt="ico">
+              <h2 class="ceiling__par-titel">Отличное решение для кухни и ванной</h2>
+              <p class="ceiling__advice-description">Полотно легко моется и не впитывает влагу и запахи</p>
+            </div>
+            <div class="ceiling__stock-block">
+              <img src="img/stock/2.svg" alt="ico">
+              <h2 class="ceiling__par-titel">Не требуют специального ухода</h2>
+              <p class="ceiling__advice-description">Достаточно протереть полотно раз в два года. Не сильное загрязнение
+                можно удалить мыльным раствором</p>
+            </div>
+            <div class="ceiling__stock-block">
+              <img src="img/stock/3.svg" alt="ico">
+              <h2 class="ceiling__par-titel">Идеально ровная поверхность</h2>
+              <p class="ceiling__advice-description">Натяжное полотно скрывает электропроводку, коммуникации и дефекты
+                базового потолка</p>
+            </div>
+            <div class="ceiling__stock-block">
+              <img src="img/stock/4.svg" alt="ico">
+              <h2 class="ceiling__par-titel">Безопасные баллоны</h2>
+              <p class="ceiling__advice-description">Мы используем полимерно-композитные баллоны, оснащенные контролем
+                давления газа</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="ceiling__call">
+        <div class="ceiling__container">
+          <h2 class="ceiling__title">Бесплатный вызов замерщика<br>
+            +7 (495) 787-00-00</h2>
+          <h4 class="ceiling__sub-title">Оставьте нам свой номер телефона и мы перезвоним Вам утром</h4>
+          <form action="#" class="ceiling__call-form">
+            <input type="text" placeholder="Номер телефона" class="ceiling__call-input">
+            <button type="submit" class="ceiling__form-sub">перезвонить мне</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="ceiling__container">
+        <div class="footer__inner">
+          <div class="footer__block">
+            <div class="footer__logo">
+              <a href="#">
+                <img src="img/footerlogo.svg" alt="logo">
+              </a>
+            </div>
+            <div class="footer__soc-inner">
+              <a href="#" class="footer__soc-img">
+                <img src="" alt="soc">
+              </a>
+            </div>
+            <div class="header__block-inner">
+              <ul class="header__tab-lists footer-mb">
+                <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать замерщика</a></li>
+                <li class="header__tab-list"><a href="#" class="header__tab-link">Оплата заказа online</a></li>
+                <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать сервисную службу</a></li>
+                <li class="header__tab-list"><a href="#" class="header__tab-link">Найти ближайший офис</a></li>
+                <li class="header__tab-list"><a href="#" class="header__tab-link">Написать отзыв</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__block">
+            <ul class="header__tab-lists footer-mb">
+              <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать замерщика</a></li>
+              <li class="header__tab-list"><a href="#" class="header__tab-link">Оплата заказа online</a></li>
+              <li class="header__tab-list"><a href="#" class="header__tab-link">Вызвать сервисную службу</a></li>
+              <li class="header__tab-list"><a href="#" class="header__tab-link">Найти ближайший офис</a></li>
+              <li class="header__tab-list"><a href="#" class="header__tab-link">Написать отзыв</a></li>
+            </ul>
+            <ul class="header__tab-lists footer-mb">
+              <li class="header__tab-list sub-tab ">Технологии</li>
+              <div class="header__tab-sub-content">
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <ul class="header__tab-lists">
+              <li class="header__tab-list sub-tab">Технологии</li>
+              <div class="header__tab-sub-content">
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+              </div>
+            </ul>
+            <ul class="header__tab-lists">
+              <li class="header__tab-list sub-tab">Технологии</li>
+              <div class="header__tab-sub-content">
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <ul class="header__tab-lists">
+              <li class="header__tab-list sub-tab">Технологии</li>
+              <div class="header__tab-sub-content">
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+              </div>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <ul class="header__tab-lists" style="margin-bottom: 30px;">
+              <li class="header__tab-list sub-tab">Технологии</li>
+              <div class="header__tab-sub-content">
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Сподсветкой</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Бесшовные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Фотопечать</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Звездное небо</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Криволинейные</a></li>
+                <li class="header__tab-sub-list"><a href="#" class="header__tab-sub-link">Парящие</a></li>
+              </div>
+            </ul>
+            <div class="header__phones" style="margin: 0;">
+              <div class="header__phones-inner" style="margin: 0;">
+                <a href="tel:+74957870000" class="header__phone">+7 (495) 787-00-00</a>
+                <a href="tel:8 800 200-00-92" class="header__phone">8 800 200-00-92</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="footer__polit">
+          © 2021 Випсилинг - франчайзинговая сеть, франчайзи ИП Козицин Александр Анатольевич, ИНН 666203065665, ОГРНИП 311667214300044. «Випсилинг» - зарегистрированный знак обслуживания, свидетельство №522599. Зарегистрирован в Государственном реестре товарных знаков и знаков обслуживания Российской Федерации 18 сентября 2014 г. Информация о государственной регистрации предоставления права использования знака обслуживания франчайзи на сайте ФИПС. *Випсилинг - натяжные потолки №1 в России по данным из отчета OMG на февраль 2021. Материалы сайта носят справочно-информационный характер и не являются публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.
+        </p>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/swiper.box.min.js"></script>
+  <script src="js/nouislider.min.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

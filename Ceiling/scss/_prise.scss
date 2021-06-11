@@ -1,0 +1,103 @@
+.ceiling {
+
+  // .ceiling__prise
+
+  &__prise {
+    .ceiling__title{
+      margin-bottom: 20px;
+    }
+    .ceiling__sub-title{
+      margin-left: 0;
+      margin-bottom: 15px;
+    }
+    .ceiling__settings-prise{
+      margin-right: 5px;
+    }
+  }
+
+
+  // .ceiling__prise-inner
+
+  &__prise-inner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    margin-bottom: 55px;
+    
+    border: 1px solid lightgray;
+    @media (max-width:991px) {
+      flex-direction: column;
+    }
+  }
+
+  // .ceiling__prise-block
+
+  &__prise-block {
+    padding: 25px 30px;
+    & + &{
+      border-left: 1px solid lightgray;
+      @media (max-width:991px){
+        border-top: 1px solid lightgray;
+      }
+    }
+  }
+
+  // .ceiling__par-titel
+
+  &__par-titel {
+  }
+
+  // 
+
+  &__settings-prise {
+  }
+
+  // .ceiling__settings-prise-v
+
+  &__settings-prise-v {
+    font-weight: 700;
+  }
+
+  // .ceiling__prise-anot
+
+  &__prise-anot {
+    font-size: 11px;
+    font-weight: 300;
+    margin-bottom: 25px;
+  }
+
+  // .ceiling__prise-img
+
+  &__prise-img {
+    margin-bottom: 25px;
+  }
+
+  // .ceiling__prise-settings
+
+  &__prise-settings {
+    margin-bottom: 5px;
+    @media (max-width:991px){
+      display: none;
+    }
+  }
+
+    // .ceiling__prise-settings
+
+    &__prise-settings-list {
+      li{
+        font-size: 11px;
+        line-height: 24px;
+      }
+      @media (max-width:991px){
+        display: none;
+      }
+    }
+    .ceiling__prise-info-inner{
+      display: flex;
+      flex-direction: column;
+      @media (max-width:991px){
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+}

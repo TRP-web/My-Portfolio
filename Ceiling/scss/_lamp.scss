@@ -1,0 +1,118 @@
+.ceiling {
+
+  // .ceiling__lamp
+
+  &__lamp {
+    .ceiling__title{
+      margin-bottom: 50px;
+    }
+  }
+
+  
+
+  // .ceiling__lamp-block
+
+  &__lamp-block {
+    margin-bottom: 32px;
+  }
+
+  // .ceiling__lamp-inner
+
+  &__lamp-inner {
+    display: flex;
+    border: 1px solid #e6e6e6;
+    width: 100%;
+    @media (max-width:991px) {
+      flex-direction: column;
+    }
+  }
+
+  // .ceiling__lamp-img
+
+  &__lamp-img {
+    @media (max-width:991px){
+      margin: 0 auto;
+    }
+  }
+
+  // .ceiling__lamp-text
+
+  &__lamp-text {
+    padding: 30px;
+    flex: 0 0 50%;
+  }
+
+  // .ceiling__par-titel
+
+  &__par-titel {
+    
+    
+  }
+
+  // .ceiling__lamp-prise-inner
+
+  &__lamp-prise-inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    @media (max-width:991px){
+      align-items: center;
+    }
+    @media (max-width:600px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  // .ceiling__lamp-prise
+
+  &__lamp-prise {
+  }
+
+  // .ceiling__settings-prise
+
+  &__settings-prise {
+    line-height: 24px;
+  }
+
+  // .ceiling__lamp-prise-info
+
+  &__lamp-prise-info {
+    font-size: 11px;
+    line-height: 24px;
+    font-weight: 300;
+  }
+
+  // .ceiling__lamp-prise-img
+
+  &__lamp-prise-img {
+    display: flex;
+    
+  }
+
+  // .ceiling__lamp-settings
+
+  &__lamp-settings {
+    background-color: #F7F7F7;
+    border: 1px solid lightgray;
+    padding: 12px 16px;
+  }
+
+  // .ceiling__lamp-par-block
+
+  &__lamp-par-block {
+  }
+
+  // .ceiling__lamp-set
+
+  &__lamp-set {
+    margin-bottom: 2px;
+  }
+
+  // .ceiling__lamp-set-cont
+
+  &__lamp-set-cont {
+    font-size: 11px;
+    line-height: 1;
+  }
+}
