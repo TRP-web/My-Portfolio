@@ -1,0 +1,46 @@
+.header {
+
+  // .header__inner
+
+  &__inner {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__burger
+
+  &__burger {
+    position: relative;
+    cursor: pointer;
+    height: 15px;
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      background-color: #443920;
+    }
+    &::before{
+      top: 0;
+    }
+    &::after{
+      bottom: 0;
+    }
+    span{
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      background-color: #443920;
+      top: 50%;
+      margin-top: -2px;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    
+  }
+}

@@ -1,0 +1,25 @@
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+
+  // .footer__inner
+
+  
+  &__inner {
+    display: flex;
+    justify-content:space-between;
+    height: 50px;
+    align-items: center;
+  }
+
+  // .footer__logo
+
+  &__logo {
+  }
+
+  // .footer__button
+
+  &__button {
+  }
+}
