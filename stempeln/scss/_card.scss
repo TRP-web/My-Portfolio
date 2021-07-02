@@ -1,0 +1,68 @@
+.card {
+
+  // .card__header
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  
+  display: none;
+  &.active{
+    display: block;
+  }
+  &__header {
+    
+  }
+
+  // .card__header-inner
+
+  &__header-inner {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    box-shadow: 0 4px 4px -4px #333;
+    padding: 0 15px;
+    margin-top: 50px;
+  }
+
+  // .card__header-arrow
+
+  &__header-arrow {
+    margin-right: 30px;
+    width: 25px;
+  }
+
+  // .card__header-name
+
+  &__header-name {
+  }
+}
+
+.card {
+
+  // .card__logo
+
+  &__logo {
+    margin-bottom: 15px;
+  }
+
+  // .card__logo-inner
+
+  &__logo-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3394F;
+    height: 200px;
+  }
+
+  // .card__logo-img
+
+  &__logo-img {
+  }
+}
+
