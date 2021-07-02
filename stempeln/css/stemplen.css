@@ -80,7 +80,7 @@ body {
   z-index: 1;
   cursor: pointer;
   height: 15px;
-  opacity: 1;
+  display: block;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
@@ -111,7 +111,7 @@ body {
 }
 
 .header__burger.active {
-  opacity: 0;
+  display: none;
 }
 
 .header__logo {
@@ -192,6 +192,16 @@ body {
   right: -50px;
 }
 
+.header .header-arrow {
+  width: 25px;
+  cursor: pointer;
+  display: none;
+}
+
+.header .header-arrow.active {
+  display: block;
+}
+
 .menu-logo img {
   width: 130px;
   margin: 0 auto;
@@ -236,6 +246,7 @@ body {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
   color: #fff;
+  cursor: pointer;
   background: -webkit-gradient(linear, left bottom, left top, from(#ff7649), to(#ff9653));
   background: linear-gradient(0deg, #ff7649, #ff9653);
 }
@@ -246,7 +257,6 @@ body {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   background-color: #fff;
   display: none;
 }
@@ -269,11 +279,6 @@ body {
   margin-top: 50px;
 }
 
-.card__header-arrow {
-  margin-right: 30px;
-  width: 25px;
-}
-
 .card__logo {
   margin-bottom: 15px;
 }
@@ -294,6 +299,38 @@ body {
           align-items: center;
   background-color: #E3394F;
   height: 200px;
+  margin-top: 50px;
+}
+
+.card__logo-img {
+  max-width: 200px;
+}
+
+.card__info-sub-title {
+  text-align: center;
+  margin: 0;
+}
+
+.card__info-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.card__info-img-inner {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+  margin-bottom: 30px;
+}
+
+.card__info-text {
+  font-size: 27px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 .main__slider {
@@ -329,28 +366,7 @@ body {
   border-radius: 15px;
 }
 
-.card__info-sub-title {
-  text-align: center;
-  margin: 0;
-}
-
-.card__info-title {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.card__info-img-inner {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  margin-bottom: 30px;
-}
-
-.card__info-text {
-  font-size: 27px;
-  font-weight: 400;
-  text-align: center;
+.main__wrapper.active {
+  height: 100vh;
+  overflow: hidden;
 }

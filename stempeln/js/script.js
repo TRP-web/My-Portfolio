@@ -12,7 +12,10 @@ window.addEventListener("load", function () {
     burgerDel.classList.remove('active');
     burger.classList.remove('active');
   } )
-  const tabPages = document.querySelectorAll('.footer__logo')
+  const tabPages = document.querySelectorAll('.footer__logo');
+  const headArr = document.querySelector('.header-arrow');
+  const mainWrapper =  document.querySelector('.main__wrapper');
+  console.log(headArr)
   console.log(tabPages);
   tabPages.forEach((elem) => {
     elem.addEventListener('click', () => {
@@ -20,17 +23,22 @@ window.addEventListener("load", function () {
       elem.classList.add('active');
       let dataPage = elem.getAttribute('data-tab');
       let itemsPage = document.querySelector(dataPage);
-
+      burger.classList.add('active');
+      headArr.classList.add('active');
       itemsPage.classList.add('active');
+      mainWrapper.classList.add('active');
     })
   })
-  const tabPrevArrow = document.querySelectorAll('.card__header-arrow')
+  const tabPrevArrow = document.querySelectorAll('.header-arrow')
   const page = document.querySelectorAll('.page')
   tabPrevArrow.forEach((elem) => {
     elem.addEventListener('click', () => {
       page.forEach((elem) => {
         elem.classList.remove('active');
       })
+      burger.classList.remove('active');
+      headArr.classList.remove('active');
+      mainWrapper.classList.remove('active');
     })
 
   })

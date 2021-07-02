@@ -42,10 +42,10 @@
       top: 50%;
       margin-top: -2px;
     }
-    opacity: 1;
+    display: block;
     transition-duration: 0.5s;
     &.active{
-      opacity: 0;
+      display: none;
     }
   }
 
@@ -133,6 +133,15 @@
     &.active{
       opacity: 1;
       right: -50px;
+    }
+  }
+  .header-arrow {
+    
+    width: 25px;
+    cursor: pointer;
+    display: none;
+    &.active{
+      display: block;
     }
   }
 }
