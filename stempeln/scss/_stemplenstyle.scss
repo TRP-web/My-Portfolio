@@ -1,0 +1,14 @@
+body{
+  font-family: Arial,  sans-serif;
+}
+
+.stemplen {
+  
+  // .stemplen__container
+
+  &__container {
+    max-width: 425px;
+    margin: 0 auto;
+    padding: 0 25px;
+  }
+}
