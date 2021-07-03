@@ -1,0 +1,96 @@
+.form {
+
+  // .form__title
+
+  &__title {
+    font-weight: 700;
+    color: grey;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  // .form__reg
+
+  &__reg {
+  }
+
+  // .form__inner
+
+  &__inner {
+    display: block;
+    &:nth-child(4){
+      margin-bottom: 30px;
+    }
+  }
+  .form__inner + .form__inner{
+    margin-top: 15px;
+  }
+  // .form__input-title
+
+  &__input-title {
+    color: grey;
+    line-height: 1;
+    font-weight: 400;
+  }
+
+  // .form__text-input
+
+  &__text-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid lightgrey;
+  }
+
+  // .form__ques
+
+  &__ques {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  // .form__checkbox
+
+  &__checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid lightgrey;
+    margin-right: 10px;
+  }
+
+  // .form__ques-text
+
+  &__ques-text {
+    font-size: 12px;
+    color: grey;
+  }
+
+  // .form__button
+
+  &__button {
+    width: 250px;
+    margin: 0 auto;
+    font-size: 20px;
+    border: none;
+    background-color: #FFAF00;
+    color: #fff;
+    height: 40px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+}
+.page {
+}
+.stemplen {
+
+  // .stemplen__container
+
+  &__container {
+  }
+}
+
+.form__button-inner{
+  display: flex;
+  justify-content: center;
+}
