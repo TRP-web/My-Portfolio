@@ -1,0 +1,162 @@
+.header {
+  z-index: 1003;
+  position: fixed;
+  width: 100vw;
+
+  // .header__inner
+
+  &__inner {
+    position: relative;
+    z-index: 1000;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .header__burger
+
+  &__burger {
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    height: 16px;
+    width: 20px;
+    &::before, &::after{
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      background-color: #443920;
+    }
+    &::before{
+      top: 0;
+    }
+    &::after{
+      bottom: 0;
+    }
+    span{
+      position: absolute;
+      width: 20px;
+      height: 4px;
+      background-color: #443920;
+      top: 50%;
+      margin-top: -2px;
+    }
+    display: block;
+    transition-duration: 0.5s;
+    &.active{
+      display: none;
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+   width: 135px; 
+   cursor: pointer;
+  }
+}
+
+.header {
+  z-index: 995;
+  // .header__menu
+
+  &__menu {
+    position: absolute;
+    left: -85%;
+    width: 85vw;
+    height: 100vh;
+    background-color: #F9F3B7;
+    transition-duration: 0.5s;
+    padding: 0 15px;
+    z-index: 2000;
+    &.active{
+      left: 0;
+    }
+    .header__logo{
+      width: 135px;
+    }
+  }
+  .header__menu{
+    
+    .header__logo{
+      
+      width: 35px;
+    }
+  }
+  // .header__logo
+
+  &__logo {
+    margin-right: 20px;
+  }
+
+  // .header__list
+
+  &__list {
+    padding-top: 30px;
+    li{
+      border-bottom: 2px solid grey;
+      position: relative;
+      cursor: pointer;
+      
+      &::after{
+        position: absolute;
+        content: '';
+        background-image: url('../img/arrkey.svg') ;
+        background-repeat: no-repeat;
+        position: absolute;
+        width: 10px;
+        height: 40px;
+        top: 18px;
+        right: 10px;
+      }
+    }
+  }
+
+  // .header__link
+
+  &__link {
+    text-decoration: none;
+    color: #21212A;
+    width: 100%;
+    display: block;
+    padding: 10px 0;
+  }
+
+  // .header__menu-del
+
+  &__menu-del {
+    width: 35px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    z-index: 2001;
+    &.active{
+      opacity: 1;
+      right: -50px;
+    }
+  }
+  .header-arrow {
+    
+    width: 17px;
+    cursor: pointer;
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+}
+
+.menu-logo{
+  
+  img{
+    width: 130px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+}
