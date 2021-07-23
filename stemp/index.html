@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stemplen</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/stemplen.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <main class="stemplen">
+    <header class="header">
+      <nav class="header__menu">
+        <a href="#" class="menu-logo">
+          <img src="img/web-logo.png" alt="logo">
+        </a>
+        <ul class="header__list">
+          <li class="link-home" data-tab="#page6"><a href="#" class="header__link">Добро пожаливать</a></li>
+          <li class="link-home" data-tab="#page7"><a href="#" class="header__link">Как собирать пункты?</a></li>
+          <li class="link-home" data-tab="#page8"><a href="#" class="header__link">Информация о компании</a></li>
+          <li class="link-home" data-tab="#page9"><a href="#" class="header__link">Политика конфиденциальности</a></li>
+          <li class="link-home" data-tab="#page10"><a href="#" class="header__link">Контакт</a></li>
+          <li><a href="#" class="header__link">Для бизнеса</a></li>
+        </ul>
+        <div class="header__menu-del">
+          <img src="img/del.png" alt="del">
+        </div>
+      </nav>
+      <div class="stemplen__container">
+        <div class="header__inner">
+          <div class="header-arrow">
+            <img src="img/angle-left.svg" alt="ar">
+          </div>
+          <div class="header__burger">
+            <span></span>
+          </div>
+          <a href="#" class="header__logo ">
+            <img src="img/web-logo.png" alt="logo">
+          </a>
+          <div class="header__flex-elem"></div>
+        </div>
+      </div>
+    </header>
+    <div class="main__wrapper">
+    </div>
+    <footer class="footer">
+      <div class="stemplen__container">
+        <div class="footer__inner">
+          <div class="footer__logo" data-tab="#page11">
+            <img src="img/1-icon.png" alt="page">
+          </div>
+          <div class="footer__logo" data-tab="#page22">
+            <img src="img/2-icon.png" alt="page">
+          </div>
+          <button class="footer__button footer__logo" data-tab="#page-pin">
+            штамп
+          </button>
+          <div class="footer__logo " data-tab="#page3">
+            <img src="img/3-icon.png" alt="page">
+          </div>
+          <div class="footer__logo" data-tab="#page4">
+            <img src="img/4-icon.png" alt="page">
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="card page" id="page1">
+      <div class="stemplen__container">
+      </div>
+      <section class="card__logo">
+        <div class="card__logo-inner">
+          <div class="card__logo-img">
+            <img src="img/firmlogo.png" alt="firm-logo">
+          </div>
+        </div>
+      </section>
+      <section class="card__info">
+        <div class="stemplen__container">
+          <h5 class="card__info-sub-title">
+            карта принадлежит
+          </h5>
+          <h2 class="card__info-title">
+            Вася Пупкин
+          </h2>
+          <div class="card__info-img-inner">
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+            <div class="card__info-img">
+              <img src="img/cardlogo.png" alt="img">
+            </div>
+          </div>
+          <p class="card__info-text">
+            Купите 9 чашек кофе и 10-я будет в подарок!
+          </p>
+          <div style="height: 50px;"></div>
+        </div>
+      </section>
+    </div>
+    <div class="form page" id="page">
+      <div class="stemplen__container">
+        <h2 class="form__title">Регистрация</h2>
+        <form action="#" class="form__reg">
+          <label for="" class="form__inner">
+            <h4 class="form__input-title">Имя</h4>
+            <input type="text" class="form__text-input">
+          </label>
+          <label for="" class="form__inner">
+            <h4 class="form__input-title">Фамилия</h4>
+            <input type="text" class="form__text-input">
+          </label>
+          <label for="" class="form__inner">
+            <h4 class="form__input-title">Емаил</h4>
+            <input type="text" class="form__text-input">
+          </label>
+          <label for="" class="form__inner">
+            <h4 class="form__input-title">Пароль</h4>
+            <input type="password" class="form__text-input">
+          </label>
+          <label for="" class="form__ques">
+            <input type="checkbox" class="form__checkbox">
+            <span class="form__ques-text">Я согласен на обработку персональных данных</span>
+          </label>
+        </form>
+        <div class="form__button-inner">
+          <button class="footer__logo form__button" data-tab="#page5">Зарегестрироваться</button>
+        </div>
+      </div>
+      <div style="height: 50px;"></div>
+    </div>
+    <div class="form page" id="page2">
+      <div class="stemplen__container">
+        <h2 class="form__title">Логин</h2>
+        <form action="#" class="form__reg">
+
+          <label for="" class="form__inner">
+            <h4 class="form__input-title">Емаил</h4>
+            <input type="text" class="form__text-input">
+          </label>
+          <label for="" class="form__inner">
+            <h4 class="form__input-title">Пароль</h4>
+            <input type="password" class="form__text-input">
+          </label>
+          <label for="" class="form__ques">
+            <input type="checkbox" class="form__checkbox">
+            <span class="form__ques-text">Я согласен на обработку персональных данных</span>
+          </label>
+        </form>
+        <div class="form__button-inner">
+          <button class="footer__logo form__button" data-tab="#page5">Логин</button>
+        </div>
+      </div>
+      <div style="height: 50px;"></div>
+    </div>
+    <div class="pin page" id="page-pin">
+      <div style="height: 50px;"></div>
+      <div class="stemplen__container">
+        <h3 class="pin__title">Ввдите секретный код</h3>
+        <form action="#" class="pin__form">
+          <label for="" class="pin__input">
+            <input type="number" class="pin__pas-inp">
+          </label>
+          <label for="" class="pin__input">
+            <input type="number" class="pin__pas-inp">
+          </label>
+          <label for="" class="pin__input">
+            <input type="number" class="pin__pas-inp">
+          </label>
+          <label for="" class="pin__input">
+            <input type="number" class="pin__pas-inp">
+          </label>
+        </form>
+        <div class="pin__number-inner">
+          <div class="pin__number">
+            1
+          </div>
+          <div class="pin__number">
+            2
+          </div>
+          <div class="pin__number">
+            3
+          </div>
+          <div class="pin__number">
+            4
+          </div>
+          <div class="pin__number">
+            5
+          </div>
+          <div class="pin__number">
+            6
+          </div>
+          <div class="pin__number">
+            7
+          </div>
+          <div class="pin__number">
+            8
+          </div>
+          <div class="pin__number">
+            9
+          </div>
+          <div class="pin__number-hide">
+            <span class=" pin__number-hide"></span>
+          </div>
+          <div class="pin__number">
+            0
+          </div>
+          <div class="pin__del">
+            <div class="pin__del-img">
+              <img src="img/becks.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div style="height: 50px;"></div>
+    </div>
+    <div class="info page" id="page3">
+      <div class="stemplen__container">
+        <div class="main__logo-img info__logo">
+          <img src="img/firmlogo.png" alt="">
+        </div>
+        <div class="info__set-title-inner">
+          <h3 class="stemple__set-title">Фирма Мипель</h3>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/street.svg" alt="icon">
+            </div>
+            <p class="info__setting-text">Ул Советская д. 10 87267 Москва</p>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/web.svg" alt="icon">
+            </div>
+            <a href="#" class="info__setting-text">интернет-сайт.ру</a>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/email.svg" alt="icon">
+            </div>
+            <a href="#" class="info__setting-text">емейл адрес</a>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/phone.png" alt="icon">
+            </div>
+            <a href="tel:0123234567" class="info__setting-text">0123-234567</a>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/calendar.svg" alt="icon">
+            </div>
+            <p class="info__setting-text">Пн-Пт:10:00 - 18:00<br>Суб.:10:00 - 13:00<br>Вск.:выходной</p>
+          </div>
+        </div>
+        <div class="info__stock">
+          <div class="info__title-inner">
+            <div class="info__title-img">
+              <img src="img/arrow-circle-right-solid.svg" alt="">
+            </div>
+            <h3 class="stemple__set-title">Фирма Мипель</h3>
+          </div>
+
+          <p class="info__stock-text">Купите 9 чашек кофе и 10-я будет в подарок!</p>
+        </div>
+        <div class="info__use">
+          <div class="info__title-inner">
+            <div class="info__title-img">
+              <img src="img/arrow-circle-right-solid.svg" alt="">
+            </div>
+            <h3 class="stemple__set-title">Фирма Мипель</h3>
+          </div>
+          <ul class="info__use-list">
+            <li class="info__use-li">1.Получи 1 штамп за каждую покупку.</li>
+            <li class="info__use-li">2.Соберите необходимое число штампов для получения вознагражения.</li>
+            <li class="info__use-li">3.Срок действия Вашей карты безлимитный.</li>
+            <li class="info__use-li">4.Штампы не могут быть замечены, возвращены, заменены или выкуплены за наличные
+              деньги.</li>
+            <li class="info__use-li">5.Карта не подлежит передаче и не может быть объединена с другими картами.</li>
+            <li class="info__use-li">6.Компания оставляет за собой право окончательного решения в случаае возникновения
+              споров.</li>
+          </ul>
+        </div>
+        <div style="height: 50px;"></div>
+      </div>
+    </div>
+    <div class="profil page" id="page4">
+      <div class="stemplen__container">
+        <div class="profil__info-block">
+          <h3 class="stemple__set-title">Фирма Мипель</h3>
+          <div class="profil__settings-inner">
+            <div class="profil__set-date">
+              <span>Регестрация: 12.03/2021</span>
+            </div>
+            <div class="profil__set-email">
+              <div class="profil__email-img">
+                <img src="img/email.svg" alt="icon">
+              </div>
+              <span class="profil__email-text">емейл@mail.ru</span>
+            </div>
+          </div>
+        </div>
+        <div class="profil__info-block">
+          <button class="profil__button">Отправить повторно</button>
+          <span class="profil__button-text">Забыл пароль</span>
+        </div>
+        <div class="profil__info-block">
+          <button class="profil__button">Отправить повторно</button>
+          <span class="profil__button-text">Забыл пароль</span>
+        </div>
+        <div class="profil__title-inner">
+          <div class="profil__title-img">
+            <img src="img/bookmark.svg" alt="" style="fill: #FF006D;">
+          </div>
+          <h4 class="stemplen__sub-title">Мои скидочные карти</h4>
+        </div>
+
+        <div class="profil__logo-inner">
+          <div class="profil__logo-img">
+            <img src="img/firmlogo.png" alt="">
+          </div>
+          <div class="profil__logo-img">
+            <img src="img/firmlogo.png" alt="">
+          </div>
+          <div class="profil__logo-img">
+            <img src="img/firmlogo.png" alt="">
+          </div>
+          <div class="profil__logo-img">
+            <img src="img/firmlogo.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div style="height: 50px;"></div>
+    </div>
+    <div class="question page" id="page5">
+      <div class="stemplen__container">
+        <h3 class="form__title">Подписка на рассылки</h3>
+        <p class="question__text">Завершая создание аккаунта необходимо подписаться на получение уведомлений.</p>
+        <p class="question__text">Вы будите получать уведомления связанные только с Вашей картой.</p>
+        <p class="question__text">Уведомления не предполагают спам-рассылки.</p>
+        <div class="question__button-inner">
+          <button class="question__button-yes">ДА</button>
+          <button class="question__button-no">НЕТ</button>
+        </div>
+      </div>
+    </div>
+    <div class="burger__page page" id="page6">
+      <div class="stemplen__container">
+        1
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus magnam cum sed porro vero laborum, quam quasi
+        iste molestias ut, dolore quibusdam amet numquam esse repellendus error. Tempore, dicta a.
+      </div>
+    </div>
+    <div class="burger__page page" id="page7">
+      <div class="stemplen__container">
+        2
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste animi enim rem, at quae vel laboriosam cum
+        inventore natus quo a adipisci suscipit dolor nulla voluptatem vero labore, dicta nemo.
+      </div>
+    </div>
+    <div class="burger__page page" id="page8">
+      <div class="stemplen__container">
+        3
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui ipsam quos quibusdam est consequatur nihil
+        delectus dolores, amet dignissimos veniam temporibus molestias enim quidem dicta, explicabo sapiente impedit
+        esse deserunt.
+      </div>
+    </div>
+    <div class="burger__page page" id="page9">
+      <div class="stemplen__container">
+        4
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium ullam delectus ipsa voluptas dignissimos?
+        Id doloribus eveniet praesentium ipsum nulla dolorem qui, repellat architecto nihil laudantium, necessitatibus
+        fugiat facilis quia.
+      </div>
+    </div>
+    <div class="burger__page page" id="page10">
+      <div class="stemplen__container">
+        5
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo, repellat? Maiores aspernatur odit illo nemo
+        recusandae rerum nulla soluta, dignissimos quaerat, adipisci ex quae perspiciatis laudantium harum sed
+        voluptatum repellendus?
+      </div>
+    </div>
+    <div class="main__slider-page page" id="page11">
+      <section class="main__slider">
+        <div class="main__swip-slider swiper-container">
+          <div class="main__swip-slider-wrapper swiper-wrapper">
+            <div class="main__swip-slide swiper-slide">
+              <div class="main__swip-slide-container ">
+                <img src="img/slider1.jpg" alt="banner">
+              </div>
+            </div>
+            <div class="main__swip-slide swiper-slide">
+              <div class="main__swip-slide-container">
+                <img src="img/slider1.jpg" alt="banner">
+              </div>
+            </div>
+            <div class="main__swip-slide swiper-slide">
+              <div class="main__swip-slide-container">
+                <img src="img/slider1.jpg" alt="banner">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main__logo">
+        <div class="stemplen__container">
+          <div class="main__logo-inner">
+            <div class="main__logo-img">
+              <img src="img/firmlogo.png" alt="">
+            </div>
+            <div class="main__logo-img">
+              <img src="img/firmlogo.png" alt="">
+            </div>
+            <div class="main__logo-img">
+              <img src="img/firmlogo.png" alt="">
+            </div>
+            <div class="main__logo-img">
+              <img src="img/firmlogo.png" alt="">
+            </div>
+            <div class="main__logo-img">
+              <img src="img/firmlogo.png" alt="">
+            </div>
+            <div class="main__logo-img">
+              <img src="img/firmlogo.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+      <div></div>
+    </div>
+    <div class="discont page " id="page22">
+      <div class="stemplen__container">
+        <div class="discont__banner footer__logo" data-tab="#page111">
+          <img src="img/slider1.jpg" alt="banner">
+        </div>
+        <div class="discont__logo-inner">
+          <div class="discont__logo  footer__logo" data-tab="#page111">
+            <img src="img/banner.jpg" alt="logo">
+          </div>
+          <div class="discont__logo  footer__logo" data-tab="#page111">
+            <img src="img/banner.jpg" alt="logo">
+          </div>
+          <div class="discont__logo  footer__logo" data-tab="#page111">
+            <img src="img/banner.jpg" alt="logo">
+          </div>
+          <div class="discont__logo  footer__logo" data-tab="#page111">
+            <img src="img/banner.jpg" alt="logo">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="info page" id="page111">
+      <div class="stemplen__container">
+        <div class="main__logo-img info__logo">
+          <img src="img/firmlogo.png" alt="">
+        </div>
+        <div class="info__set-title-inner">
+          <h3 class="stemple__set-title">Фирма Мипель</h3>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/street.svg" alt="icon">
+            </div>
+            <p class="info__setting-text">Ул Советская д. 10 87267 Москва</p>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/web.svg" alt="icon">
+            </div>
+            <a href="#" class="info__setting-text">интернет-сайт.ру</a>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/email.svg" alt="icon">
+            </div>
+            <a href="#" class="info__setting-text">емейл адрес</a>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/phone.png" alt="icon">
+            </div>
+            <a href="tel:0123234567" class="info__setting-text">0123-234567</a>
+          </div>
+          <div class="info__setting-inner">
+            <div class="info__setting-img">
+              <img src="img/calendar.svg" alt="icon">
+            </div>
+            <p class="info__setting-text">Пн-Пт:10:00 - 18:00<br>Суб.:10:00 - 13:00<br>Вск.:выходной</p>
+          </div>
+        </div>
+
+        <div style="height: 50px;"></div>
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
