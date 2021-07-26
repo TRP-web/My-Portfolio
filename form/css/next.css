@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial';
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+.background {
+  background-color: #F7F7F7FF;
+  padding-top: 30px;
+}
+
+.main-title {
+  margin: 0;
+  line-height: 0;
+  font-size: 27px;
+  padding-top: 34px;
+  padding-bottom: 46px;
+}
+
+.main-title2 {
+  margin: 0;
+  line-height: 0;
+  font-size: 27px;
+  padding-top: 15px;
+  padding-bottom: 60px;
+}
+
+.main-title3 {
+  margin: 0;
+  line-height: 0;
+  font-size: 27px;
+  padding-bottom: 23px;
+}
+
+.background2 {
+  padding-top: 22px;
+  background-color: #F9F9F9FF;
+}
+
+.text2 {
+  padding-top: -16px;
+}
+
+.sub-title {
+  margin: 0;
+  line-height: 0;
+  font-size: 22px;
+  padding-bottom: 41px;
+}
+
+.text {
+  margin: 0;
+  padding-bottom: 18px;
+  color: #8C8C8CFF;
+  line-height: 25px;
+}
+
+.input-text {
+  padding-bottom: 30px;
+  margin-bottom: 17px;
+}
+
+.card-input {
+  height: 50px;
+  width: 100%;
+}
+
+.input-text2 {
+  margin-bottom: 15px;
+}
+
+.card-input2 {
+  height: 215px;
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+
+.button1 {
+  padding-right: 23px;
+}
+
+.back {
+  width: 135px;
+  height: 37px;
+  font-size: 13px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.step {
+  width: 135px;
+  height: 37px;
+  font-size: 13px;
+  background-color: white;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+}
+
+.back:hover {
+  background-color: black;
+  color: white;
+}
+
+.step:hover {
+  background-color: black;
+  color: white;
+}
+
+.form__botton-inner {
+  display: flex;
+}
+
+.form__button {
+  width: 170px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form__button:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.form__button:hover .form__but {
+  color: #fff;
+}
+
+.form__but {
+  text-decoration: none;
+  color: black;
+}
+
+.form__but:hover {
+  color: #fff;
+}
+
+.form__button + .form__button {
+  margin-left: 30px;
+}
+
+@media (max-width: 400px) {
+  .main-title2 {
+    font-size: 23px;
+  }
+
+  .main-title3 {
+    font-size: 22px;
+  }
+
+  .sub-title {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=next.css.map */
