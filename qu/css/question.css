@@ -1,0 +1,176 @@
+@charset "UTF-8";
+
+/* Указываем box sizing */
+
+* {
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: 'Arial';
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.popup {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.11);
+  position: relative;
+}
+
+.popup__inner {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background-color: #fff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 200px;
+}
+
+.popup__title {
+  text-align: center;
+}
+
+.popup__inner-quest {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background-color: #fff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 200px;
+  display: none;
+}
+
+.popup__inner-quest.active {
+  display: block;
+}
+
+.popup__del {
+  cursor: pointer;
+}
+
+.popup__del img {
+  margin-left: auto;
+}
+
+.popup__qustion {
+  text-align: center;
+}
+
+.popup__button-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 33px;
+  padding: 0 7px;
+}
+
+.popup__button-inner button {
+  width: 80px;
+  height: 30px;
+}
+
+.popup__main-but {
+  width: 95px;
+  height: 35px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.popup__inner-yas {
+  position: absolute;
+  width: 300px;
+  height: 150px;
+  background-color: #fff;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 200px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.popup__inner-yas.active {
+  display: flex;
+}
+
+.popup__yas-title {
+  font-size: 30px;
+}
+
+#no {
+  position: absolute;
+  left: 213px;
+  top: 110px;
+}
+/*# sourceMappingURL=question.css.map */
