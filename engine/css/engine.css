@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.engine-slider__container {
+  max-width: 1200px;
+  overflow: visible;
+}
+
+.engine-slider__slede {
+  width: 500px;
+  margin-right: 15px;
+}
+
+.engine-slider__back {
+  background: url("../img/back-slider1.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border-radius: 8px;
+  width: 500px;
+  height: 200px;
+  padding: 24px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.engine-slider__title {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(51, 51, 51, 0.8);
+  margin-top: auto;
+  margin-bottom: 5px;
+}
+
+.engine-slider__sub-title {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(51, 51, 51, 0.64);
+}
+
+.engine-slider__title,
+.engine-slider__sub-title {
+  text-decoration: none;
+  font-family: 'Arial';
+  display: block;
+}
+
+.engine-slider__arrow {
+  position: absolute;
+}
+
+.engine-slider__arrow-prev {
+  transform: rotate(180deg);
+  left: 250px;
+  margin-top: 89px;
+}
+
+.engine-slider__arrow-next {
+  right: 250px;
+  margin-top: 89px;
+}
+
+.engine-slider__arrow-prev,
+.engine-slider__arrow-next {
+  position: absolute;
+  background-color: #fff;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  z-index: 2;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.engine-swiper__inner {
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1300px) {
+  .engine-slider__arrow-prev {
+    left: 10px;
+  }
+
+  .engine-slider__arrow-next {
+    right: 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  .engine-slider__back {
+    width: 400px;
+    height: 150px;
+  }
+
+  .engine-slider__arrow-prev {
+    margin-top: 60px;
+  }
+
+  .engine-slider__arrow-next {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 771px) {
+  .engine-slider__slede {
+    margin-right: 0;
+  }
+
+  .engine-slider__back {
+    width: 300px;
+    height: 100px;
+  }
+
+  .engine-slider__title {
+    font-size: 18px;
+  }
+
+  .engine-slider__sub-title {
+    font-size: 14px;
+  }
+
+  .engine-slider__arrow-prev {
+    margin-top: 40px;
+  }
+
+  .engine-slider__arrow-next {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 610px) {
+  .engine-slider__slede {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .engine-slider__slede {
+    margin-right: 9px;
+  }
+}
+/*# sourceMappingURL=engine.css.map */
