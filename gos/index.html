@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/gos.css">
+
+  <title>gos</title>
+</head>
+
+<body>
+  <main class="gos">
+    <header>
+  <div class="container">
+    <div class="row justify-content-between align-items-center">
+      <div class="col-md-2">
+        <a href="/" class="logo"><img src="images/logo.svg" alt=""></a>
+      </div>
+      <div class="col-md-10 d-flex justify-content-end">
+        <div class="header-nav d-flex">
+          <a href="#" class="header-city">Вся Россия</a>
+          <a href="#">Реклама на сайте</a>
+          <a href="#">Помощь</a>
+        </div>
+        <div class="header-info d-flex">
+          <a href="#" class="fav active">12</a>
+          <a href="#" class="ord">0</a>
+          <a href="#" class="mes">0</a>
+        </div>
+        <div class="header-balance">
+          <a href="#">Баланс</a>
+          399 201 <span>₽</span>
+        </div>
+        <div class="header-actions d-flex">
+          <a href="#">Личный кабинет</a>
+          <a href="#" class="add">Подать объявление</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="acc-panel">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h1>Личный кабинет</h1>
+        <div class="panel-breadcrumbs"><a href="#">Главная</a><span class="del">→</span><span>Мой
+            каталог</span>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel-referal">
+          <span>Ваша реферальная ссылка</span>
+          <a data-toggle="tooltip" data-placement="top"
+            title="Отправь эту ссылку знакомому и получи 450 руб на баланс после его регистрации на портале." href="#"
+            class="partner-link">https://glavorgstroy.ru/action/partner/16037</a>
+          <input type="hidden" id="copy-links" value="https://glavorgstroy.ru/action/partner/16037">
+          <div id="copy-partner" data-clipboard-target="#copy-links">Копировать</div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel-info">
+          <div class="info-avatar"><img src="images/photo.jpg" alt=""></div>
+          <div class="info-menu">
+            <div class="info-menu-inner">
+              <div class="profile-menu-toggle">Управление личным кабинетом</div>
+              <div class="profile-menu">
+                <p><a href="/profile/">Мои объявления</a></p>
+                <p><a href="/profile/edit">Редактировать профиль</a></p>
+                <p><a href="/profile/finance">Финансы</a></p>
+                <p><a href="/article/kak-poluchity-450-rub-na-balans-koshelyka-gos/">Реферальная
+                    программа</a></p>
+                <p><a href="/article/podpiska-s-prodvigheniem-na-gos/">Подписка на продвижение</a>
+                </p>
+                <p><a href="/profile/security/">Сменить пароль</a></p>
+              </div>
+            </div>
+            <div class="info-status">
+              <div class="status-butt"><span>Я заказчик</span></div>
+              <div class="status-butt active"><span>Я поставщик</span></div>
+            </div>
+          </div>
+          <a href="#" class="butt3">Выйти</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="acc-menu">
+  <div class="container">
+    <div class="acc-menu-wrap">
+      <a href="#"><u>Чат <i>4</i></u></a>
+      <a href="#" class="active">Мой каталог</a>
+      <a href="#">Добавить <span>Товар, услугу, вакансию</span></a>
+      <a href="#">Заказы <span>в работе и выполненные</span></a>
+      <a href="#">Ваши отклики <span>На запросы заказчиков</span></a>
+      <a href="#">Торги <span>По тендерам</span></a>
+      <a href="#">Редактировать профиль</a>
+      <a href="#">Подписка на продвижение</a>
+    </div>
+  </div>
+</div>
+    <div class="container__catalog">
+      <h1 class="catalog__title">Мой каталог</h1>
+<div class="catalog__button-inner">
+  <div class="button__button-item">
+    <button class="progres__button active">
+      <a href="#" class="progres__link">Активные</a>
+    </button>
+    <button class="progres__button">
+      <a href="#" class="progres__link">Завершенные</a>
+    </button>
+    <button class="progres__button">
+      <a href="#" class="progres__link">На модерации</a>
+    </button>
+    <button class="progres__button">
+      <a href="#" class="progres__link">На модерации</a>
+    </button>
+    <button class="progres__button">
+      <a href="#" class="progres__link">На модерации</a>
+    </button>
+  </div>
+  <div class="button__button-item">
+    <button class="dow__button">
+      <a href="#" class="dow__but">Выгрузить каталог XLS</a>
+    </button>
+    <button class="dow__button">
+      <a href="#" class="dow__but">Загрузить каталог XLS</a>
+    </button>
+  </div>
+</div>
+      <div class="catalog__inner">
+        <section class="catalog__form">
+  <h3 class="catalog__form-title">На данный момент у вас нет товаров и услуг в каталоге
+  </h3>
+  <a href="#" class="catalog__form-create">Добавить товар/услугу</a>
+  <h3 class="catalog__form-questions">У вас есть каталог в формате XLS? <br>Тогда скачайте шаблон выгрузки заполните все
+    поля и нажмите загрузить каталог в XLS</h3>
+  <div class="catalog__form-button-inner">
+    <button class="catalog__form-button">
+      <a href="#" class="catalog__form-but">Скачат шаблон выгрузки</a>
+    </button>
+    <div class="catalog__form-button">
+      <input type="file" class="hide" id="file">
+      <label for="file" class="catalog__form-but">Загрузить каталог XLS</label>
+    </div>
+  </div>
+  <a href="#" class="catalog__fomr-video">Видео инструкция как заполнить файл и выгрузить каталог</a>
+  <h3 class="catalog-form__title">Нужна помощь в заполнении каталога? <br>Заполните заявку</h3>
+  <form action="#" class="catalog-form">
+    <div class="catalog-form__inner">
+      <div class="catalog-form__input">
+        <span class="catalog-fomr__title">Телефон</span>
+        <input type="text">
+      </div>
+      <div class="catalog-form__input">
+        <span class="catalog-fomr__title">Контактное лицо</span>
+        <input type="text">
+      </div>
+    </div>
+    <div class="catalog-form__inner">
+      <div class="catalog-form__input">
+        <span class="catalog-fomr__title">В каком виде каталог?</span>
+        <select name="web" id="" class="catalog__form-web">
+          <option value="">Есть свой сайт с каталогом</option>
+          <option value="">Есть свой сайт с каталогом2</option>
+          <option value="">Есть свой сайт с каталогом3</option>
+        </select>
+      </div>
+      <div class="catalog-form__input">
+        <span class="catalog-fomr__title">Сколько позиций в каталоге?</span>
+        <input type="text">
+      </div>
+    </div>
+    <button class="catalog-form__button" type="submit">Отправить заявку</button>
+  </form>
+</section>
+        <aside class="catalog__info">
+  <div class="catalog-aside__inner">
+    <div class="catalog-aside__button-inner">
+      <button class="catalog-aside__button">
+        <a href="#" class="catalog-aside__but">Добавить услугу/товар</a>
+      </button>
+      <button class="catalog-aside__button">
+        <a href="#" class="catalog-aside__but">Добавить услугу/товар</a>
+      </button>
+    </div>
+    <h4 class="catalog-aside__title">
+      Подсказки
+    </h4>
+    <ul class="catalog-aside__list">
+      <li class="catalog-aside__punct">
+        <span class="catalog-aside__number">
+          1
+        </span>
+        <p class="catalog-aside__text">Не оплачивайте заказ напрямую </p>
+      </li>
+      <li class="catalog-aside__punct">
+        <span class="catalog-aside__number">
+          2
+        </span>
+        <p class="catalog-aside__text">Используйте сервис безопасной сделки </p>
+      </li>
+      <li class="catalog-aside__punct">
+        <span class="catalog-aside__number">
+          3
+        </span>
+        <p class="catalog-aside__text">Создайте договор в конструкторе и согласуйте с заказчиком в чате</p>
+      </li>
+    </ul>
+    <div class="catalog-aside__title-inner">
+      <h4 class="catalog-aside__title">
+        Журнал действий
+      </h4>
+      <span class="catalog-aside__hide">скрыть</span>
+    </div>
+    <div class="catalog-aside__post-inner">
+      <div class="catalog-aside__post">
+        <span class="catalog-aside__data">20 апреля 2021
+        </span>
+        <p class="catalog-aside__text">
+          Объявление №133333 отредакировано
+        </p>
+      </div>
+      <div class="catalog-aside__post">
+        <span class="catalog-aside__data">19 апрленя 2021
+        </span>
+        <p class="catalog-aside__text">
+          Выгрузка каталога прошла успешно
+          исправлено 135 объявлений
+        </p>
+      </div>
+    </div>
+
+    <h4 class="catalog-aside__title2 aside-news">
+      Новости
+    </h4>
+    <div class="aside-news__block">
+      <div class="aside-news__block-inner">
+        <div class="side-news__img">
+          <img src="img/news.png" alt="prevyou">
+        </div>
+        <div class="aside-news__content">
+          <span class="aside-news__date">31 декабря 2020
+          </span>
+          <p class="catalog-aside__text">
+            Подводим итоги и строим планы на 2021 год
+          </p>
+          <a href="#" class="catalog-aside__link">Подробнее</a>
+        </div>
+      </div>
+    </div>
+    <div class="aside-news__block">
+      <div class="aside-news__block-inner">
+        <div class="side-news__img">
+          <img src="img/news.png" alt="prevyou">
+        </div>
+        <div class="aside-news__content">
+          <span class="aside-news__date">31 декабря 2020
+          </span>
+          <p class="catalog-aside__text">
+            Подводим итоги и строим планы на 2021 год
+          </p>
+          <a href="#" class="catalog-aside__link">Подробнее</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+        <!--<section class="catalog__form"></section>
+      <aside class="catalog__info"></aside>-->
+      </div>
+    </div>
+  </main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
