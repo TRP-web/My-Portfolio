@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/pr2.css">
+  <title>Статистика</title>
+</head>
+
+<body>
+  <header class='header'>
+  <div class="container">
+    <div class='header__inner'>
+      <nav class='header__menu'>
+        <ul class='header__lists'>
+          <li class='header__list'><a href='index.html' class='header__link' >Статья</a></li>
+          <li class='header__list'><a href='statistics.html' class='header__link active'>Статистика</a></li>
+          <li class='header__list'><a href='notes.html' class='header__link'>Заметки</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+  <div class="container">
+    <div class="statick__inner">
+      <table>
+        <caption>Баланс</caption>
+        <thead>
+          <tr>
+            <th>Имя:</th>
+            <th>Иван Петрович</th>
+            <th>Максим Иванович</th>
+            <th>Денис Максимович</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Сумма:</th>
+            <td>1000₽</td>
+            <td>8000₽</td>
+            <td>3000₽</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <canvas id="myChart" width="400" height="400"></canvas>
+    <div class="button__inner">
+      <button class="red">Красный график</button>
+      <button class="blue">Синий график</button>
+      <button class="green">Зеленый график</button>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+  <script src="js/stat.js"></script>
+
+  <script>
+
+  </script>
+
+</body>
+
+</html>

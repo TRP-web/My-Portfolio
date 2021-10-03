@@ -1,0 +1,180 @@
+@charset "UTF-8";
+
+/* Указываем box sizing */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  font-family: Arial,  sans-serif;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: gray;
+  height: 50px;
+  margin-bottom: 100px;
+}
+
+.header__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.header__link {
+  text-decoration: none;
+  font-size: 30px;
+  color: #000;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.header__link.active {
+  color: orange;
+}
+
+.header__link:hover {
+  font-size: 32px;
+  color: orange;
+}
+
+.notes__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.notes-item {
+  max-width: 350px;
+  border: 1px solid lightgrey;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.notes-item + .notes-item {
+  margin-left: 20px;
+}
+
+.notes-item__title {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.notes__title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .notes__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .notes-item + .notes-item {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .notes-item__title {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header__lists {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .header__link {
+    font-size: 20px;
+  }
+
+  .header__link:hover {
+    font-size: 23px;
+    color: orange;
+  }
+}
